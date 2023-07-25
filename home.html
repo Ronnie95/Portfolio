@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DaRon</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous"/>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap">
+
+    <link rel="stylesheet" href="./main.css">
+    <script src="https://kit.fontawesome.com/9e419f3c2c.js" crossorigin="anonymous"></script>
+    <script src="/js/index.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <!-- <img src="https://pbs.twimg.com/profile_images/1036730403514736650/PCRxFiEt_400x400.jpg" alt="my logo"> -->
+            <a class="logo-link" href="https://ajakcyer.netlify.app/">
+            <img src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIzMzEuOTkxNyAyODkuNzM1OSAxNzcuMDE2NiAxNzUuNTU2IiB3aWR0aD0iNjIiIGhlaWdodD0iNjEuNDg4NDI1Mzc5MzE0NzA1IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48ZGVmcz48L2RlZnM+PHN0eWxlPi5pY29uMWE3bEZrUU9YT3Uge2ZpbGw6IzJCMkIyQjtmaWxsLW9wYWNpdHk6MTt9Lmljb24yYTdsRmtRT1hPdSB7ZmlsbDojNTlDNjVCO2ZpbGwtb3BhY2l0eToxO30uaWNvbjNhN2xGa1FPWE91IHtmaWxsOiM2RDZENkQ7ZmlsbC1vcGFjaXR5OjE7fTwvc3R5bGU+PGcgb3BhY2l0eT0iMSIgdHJhbnNmb3JtPSJyb3RhdGUoMCAzMzEuOTkxNyAyODkuNzM1OSkiPgo8c3ZnIHdpZHRoPSIxNzcuMDE2NiIgaGVpZ2h0PSIxNzUuNTU2IiB4PSIzMzEuOTkxNyIgeT0iMjg5LjczNTkiIHZlcnNpb249IjEuMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSIgdmlld0JveD0iMC43NTM0OTU4MTI0MTYwNzY3IDAuODM2ODYwODM1NTUyMjE1NiA0Ni42NDgwMzMxNDIwODk4NCA0Ni4yNjMxMzc4MTczODI4MSI+CiAgPGcgdHJhbnNmb3JtPSJtYXRyaXgoMSAwIDAgMSAwIDApIiBjbGFzcz0iaWNvbjFhN2xGa1FPWE91Ij48Zz48Zz48Zz48cGF0aCBkPSJNMC45LDIuNEMxLjMsMTEuMiwxLjMsMjAuMSwxLjMsMjljMCwyLjEtMC44LDExLjUsMi45LDExLjdjOC43LDAuNiwxNy42LDAuMSwyNi4zLDAuMSAgICAgYzIuNCwwLDE0LjcsMS41LDE1LjYtMS44YzIuMS03LjMsMS4xLTE2LjEsMC44LTIzLjZjLTAuMi00LjItMC40LTguNS0wLjYtMTIuN2MwLTAuOS0wLjQtMS4xLTEuMi0xLjNjLTMuNC0xLTguMi0wLjEtMTEuNy0wLjIgICAgIGMtNC41LTAuMS05LTAuMS0xMy41LTAuMkMxNS40LDEuMSwxMC45LDEsNi40LDFjLTEuNywwLTQuMi0wLjctNS41LDAuOEMwLjQsMi4zLDEuMywzLjIsMS44LDIuNmMxLjEtMS4yLDctMC40LDguNS0wLjMgICAgIGMzLjIsMCw2LjQsMC4xLDkuNiwwLjFjNi40LDAuMSwxMi45LDAuMiwxOS4zLDAuM2MxLjMsMCwyLjYsMCwzLjksMC4xYzIuOCwwLDIuMiwzLjksMi4zLDUuNWMwLjIsMy4xLDAuMyw2LjEsMC40LDkuMiAgICAgYzAuMyw2LjIsMC4zLDEyLjUtMC4zLDE4LjdjLTAuNSw1LjQtMTUuNCwzLjYtMTguOCwzLjZjLTYuNSwwLTEzLDAtMTkuNCwwYy01LjEsMC00LjQtNC43LTQuNi04LjZjLTAuMS0zLjIsMC02LjQsMC05LjYgICAgIGMwLTYuMy0wLjItMTIuNy0wLjQtMTlDMi4yLDEuNSwwLjksMS41LDAuOSwyLjRMMC45LDIuNHoiPjwvcGF0aD48L2c+PC9nPjxnPjxnPjxwYXRoIGQ9Ik0xNy4yLDEwLjJjLTEuNiwxLjQtMy44LDIuMS01LjUsMy4zYy0xLDAuNy0yLjksMi4xLTMuMywzLjRjLTAuMiwwLjksMC45LDEuNCwxLjUsMS44ICAgICBjMi40LDEuNSw0LjUsMy4zLDYuNCw1LjNjMC42LDAuNiwxLjQtMC4zLDAuOS0wLjljLTEuMi0xLjItMi40LTIuNC0zLjctMy41Yy0wLjUtMC40LTMuOC0yLjQtMy4zLTMuMWMyLjItMi42LDUuNS0zLjQsOC01LjYgICAgIEMxOC43LDEwLjUsMTcuOCw5LjYsMTcuMiwxMC4yTDE3LjIsMTAuMnoiPjwvcGF0aD48L2c+PC9nPjxnPjxnPjxwYXRoIGQ9Ik0yNy4yLDYuN2MtMi43LDcuMi01LjIsMTQuNS03LjYsMjEuOWMtMC4zLDAuOCwxLDEuMSwxLjIsMC4zYzIuNC03LjMsNC45LTE0LjYsNy42LTIxLjkgICAgIEMyOC43LDYuMywyNy41LDUuOSwyNy4yLDYuN0wyNy4yLDYuN3oiPjwvcGF0aD48L2c+PC9nPjxnPjxnPjxwYXRoIGQ9Ik0yOS4zLDExLjZjMS41LDEuMSwyLjksMi4zLDQuNCwzLjRjMC45LDAuNywxLjgsMS40LDIuNiwyLjFjMS4zLDEsMC43LDAuOS0wLjQsMS43ICAgICBjLTIuNCwxLjctNC4zLDMuOS02LDYuM2MtMC41LDAuNywwLjYsMS4zLDEuMSwwLjZjMS40LTIsMy4xLTMuOCw1LTUuNGMwLjQtMC4zLDIuNy0xLjUsMi43LTIuNGMwLTEuMi0xLjUtMS45LTIuMy0yLjUgICAgIGMtMi4xLTEuNi00LjEtMy4yLTYuMi00LjhDMjkuNSwxMC4yLDI4LjYsMTEuMSwyOS4zLDExLjZMMjkuMywxMS42eiI+PC9wYXRoPjwvZz48L2c+PGc+PGc+PHBhdGggZD0iTTIuMywzMS45YzE0LjgsMC4zLDI5LjUsMC4yLDQ0LjMtMC4zYzAuOCwwLDAuOC0xLjMsMC0xLjNjLTE0LjgsMC42LTI5LjUsMC43LTQ0LjMsMC4zICAgICBDMS41LDMwLjYsMS41LDMxLjksMi4zLDMxLjlMMi4zLDMxLjl6Ij48L3BhdGg+PC9nPjwvZz48Zz48Zz48cGF0aCBkPSJNMjEuMSwzNi42YzEuMSwwLDIuMiwwLDMuMywwYzAuOCwwLDAuOC0xLjMsMC0xLjNjLTEuMSwwLTIuMiwwLTMuMywwQzIwLjMsMzUuNCwyMC4zLDM2LjYsMjEuMSwzNi42ICAgICBMMjEuMSwzNi42eiI+PC9wYXRoPjwvZz48L2c+PGc+PGc+PHBhdGggZD0iTTIzLjgsNDAuM2MtMC4zLDEuOC0wLjQsMy42LTAuMiw1LjVjMC4xLDAuOCwxLjMsMC44LDEuMywwYy0wLjItMS43LTAuMi0zLjQsMC4xLTUuMSAgICAgQzI1LjIsMzkuOCwyNCwzOS41LDIzLjgsNDAuM0wyMy44LDQwLjN6Ij48L3BhdGg+PC9nPjwvZz48Zz48Zz48cGF0aCBkPSJNMTUuMSw0Ny4xYzYuOSwwLDEzLjgsMCwyMC42LDBjMC44LDAsMC44LTEuMywwLTEuM2MtNi45LDAtMTMuOCwwLTIwLjYsMEMxNC4zLDQ1LjgsMTQuMyw0Ny4xLDE1LjEsNDcuMSAgICAgTDE1LjEsNDcuMXoiPjwvcGF0aD48L2c+PC9nPjwvZz48L2c+Cjwvc3ZnPgo8L2c+PC9zdmc+" alt="" class="logo__img">
+            <p class="logo__name">DaRon</p>
+            </a>
+            <!-- can put in a svg, text etc -->
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#services" class="nav__link">Skills</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+                <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Introduction -->
+    <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+            Hi, I'm <strong>DaRon Tillman</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">FullStack Developer</p>
+      
+    </section>
+
+    <!-- My Services -->
+
+    <section class="my-services" id="services">
+        <h2 class="section__title section__title--services">
+            Skills
+        </h2>
+        <ul class="skills">
+            <li>
+                <img src="./images/Daco_3133777.png" alt="javascript logo">
+                Javascript
+            </li>
+            <li>
+                <img src="https://www.pinclipart.com/picdir/big/537-5374089_follow-directions-clip-art.png" alt="react js logo">
+                React JS
+            </li>
+            <li>
+                <img src="./images/django.jpg" alt="ruby on rails logo">
+                Django
+            </li>
+            <li>
+                <img src="./images/html5-icon-7.jpg" alt="html5 logo">
+                HTML5
+            </li>
+            <li>
+                <img src="./images/PngItem_1985012.png" alt="css3 logo">
+                CSS3
+            </li>
+            <li>
+                <img src="./images/Python-logo-notext.svg.png" alt="sqlite logo">
+                Python
+            </li>
+            <li>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/29/Postgresql_elephant.svg" alt="postgresql logo">
+                PostgreSQL
+            </li>
+            <li>
+                <img src="./images/ne.jpg" alt="postgresql logo">
+                Node.js & Express.js
+            </li>
+            <li>
+                <img src="./images/mongo.jpg" alt="postgresql logo">
+                MongoDB
+            </li>
+        </ul>
+        <a href="#work" class="btn">My Work</a>
+        <a href="#https://docs.google.com/document/d/13EV8dg3AUcyBfYgrsB6XdTJ7iLNlAbzlmf0c3AJgblM/edit#" class="s">My Resume</a>
+    </section>
+
+    <!-- About Me -->
+
+    <section class="about-me" id="about">
+        <h2 class="section__title section__title--about">
+            Who I am
+        </h2>
+        <p class="section__subtitle section__subtitle--about">Full stack web developer based in Cleveland, OH</p>
+
+        <div class="about-me__body">
+            <p>I am a graduate of Middle Tennesse State University Where i studied integrated studies with a minor in marketing. after obtaining my bachelors degree i jumped straight into the professional world working my way up the ladder in the supply chain logistics industry. For years i've had the passion on being a software developer so in november of 2022 i decided to start learning how to code. Two months later decided to take my learning to the next level by joining General Assembly's flex immersive bootcamp which I am a proud graduate of the July 2023 cohort.</p>
+
+            <p>My overall journey to get here was a ride but my perservasnce and dedication to my craft kept me a float. I enjoy making user friendly applications that people can use on a daily basis to make their life easier. It is a true passion of mine to help others, and of course continous improvement. Check out my projects below, Enjoy!.</p>
+        </div>
+
+        <img src="images/daron.PNG" alt="another picture of Ajak" class="about-me__img">
+    </section>
+
+    <!-- My Work -->
+
+    <section class="my-work" id="work">
+        <h2 class="section__title section__title--work">
+            My work
+        </h2>
+        <p class="section__subtitle section__subtitle--work">Check out some of my projects down below!</p>
+        <div class="portfolio">
+            <!-- Portfolio item 01 -->
+          
+
+            <!-- Portfolio item 02 -->
+            <a href="gym.html" class="portfolio__item">
+                <img src="images/gym.jpg" alt="Gym-Gems" class="portfolio__img">
+            </a>
+
+         
+            <!-- Portfolio item 04 -->
+            <a href="todo.html" class="portfolio__item">
+                <img style="min-height: 100%;" src="images/todo.jpg" alt="to" class="portfolio__img">
+            </a>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+        <a href="mailto:ajakcyer97@gmail.com" class="footer__link">daron.tillman@yahoo.com</a>
+        <ul class="social-list">
+          
+            <li class="social-list__item">
+                <a href="https://www.linkedin.com/in/daron-tillman-4aa783128/" class="social-list__link">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a href="https://github.com/Ronnie95" class="social-list__link">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+        </ul>
+    </footer>
+
+</body>
+</html>
